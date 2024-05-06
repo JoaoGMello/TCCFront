@@ -25,8 +25,8 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="relative bg-[#F2F2F2] h-full w-full grid overflow-hidden logged-layout">
-    <div class="size-full sga-content">
+  <div class="logged-layout">
+    <div class="content">
       <router-view></router-view>
     </div>
   </div>
@@ -34,5 +34,17 @@ export default defineComponent({
 
 
 <style scoped>
+.logged-layout{
+  position: relative;
+  background: #F2F2F2;
+  height: 100%;
+  height: 100%;
+  display: grid;
+  overflow: hidden;
+}
 
+.content{
+  height: 100%;
+  width: 100%;
+}
 </style>

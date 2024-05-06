@@ -25,14 +25,16 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="teste">
-    bbbb
+  <div class="login">
+    aaaaa
   </div>
 </template>
 
 
 <style scoped>
-.teste{
-  background-color: white;
+.login{
+  background-color: blue;
+  width: 100vh;
+  height: 100vw;
 }
 </style>
