@@ -3,7 +3,7 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div class="router">
+  <div class="app">
 
     <RouterView />
   </div>
@@ -14,9 +14,13 @@ import { RouterView } from 'vue-router'
 @tailwind components;
 @tailwind utilities;
 
-html, body, #app {
-  height: 100%;
-  width: 100%;
-  background-color: white;
-}
+  html, body, #app {
+    height: 100%;
+    width: 100%;
+  }
+
+  .app{
+    height: 100%;
+    width: 100%;
+  }
 </style>
