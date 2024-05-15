@@ -17,6 +17,8 @@ import { RouterView } from 'vue-router'
   html, body, #app {
     height: 100%;
     width: 100%;
+    margin: 0;
+    box-sizing: border-box;
   }
 
   .app{
