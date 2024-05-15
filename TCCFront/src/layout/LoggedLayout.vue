@@ -25,26 +25,50 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="logged-layout">
-    <div class="content">
-      <router-view></router-view>
+  <main class="main">
+    <div class="container">
+      <div class="menu">
+        <!-- menu -->
+      </div>
+
+      <div class="content home-padding">
+        <router-view></router-view>
+      </div>
     </div>
-  </div>
+  </main>
 </template>
 
 
 <style scoped>
-.logged-layout{
-  position: relative;
+.main{
+  overflow: scroll;
+  display: flex;
+  width: 100%;
+  height:100vh;
   background: #F2F2F2;
-  height: 100%;
-  height: 100%;
-  display: grid;
-  overflow: hidden;
 }
 
-.content{
-  height: 100%;
-  width: 100%;
+.container{
+  display: flex;
+  flex-direction: column;
 }
+
+.home-padding{
+  padding: 0px;
+}
+@media (min-width: 350px) {
+  .router-view{
+    max-width: 100vw;
+    padding: 0 10px 20px 10px;
+  }
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 768px) {
+  .router-view{
+    max-width: 100vw;
+    padding: 0 80px 20px 80px;
+  } 
+}
+@m
 </style>
